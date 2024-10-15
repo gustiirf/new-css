@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kursus Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s; /* Animasi perubahan warna saat hover */
+        }
+
+        nav ul li a:hover {
+            color: #e2e2e2; /* Warna saat hover */
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap; /* Memungkinkan kolom untuk membungkus pada layar kecil */
+        }
+
+        .column {
+            flex: 1 1 300px; /* Ukuran minimum 300px untuk kolom */
+            margin: 10px; /* Jarak antar kolom */
+            border-radius: 10px;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center; /* Memusatkan teks dalam kolom */
+            transition: transform 0.3s; /* Animasi saat hover */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek 3D */
+            background-color: #35424a; /* Warna latar belakang kolom */
+        }
+
+        .course {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.9); /* Latar belakang transparan untuk kursus */
+            color: #000; /* Warna teks dalam kursus */
+            transition: transform 0.2s; /* Animasi saat hover */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #35424a;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .course img {
+            width: 150px; /* Ukuran tetap untuk lebar gambar */
+            height: 150px; /* Ukuran tetap untuk tinggi gambar */
+            object-fit: cover; /* Memastikan gambar mengisi area tanpa mengubah rasio */
+            border-radius: 5px; /* Membuat sudut gambar menjadi bulat */
+        }
+
+        /* Efek saat hover pada kolom */
+        .column:hover {
+            transform: translateY(-5px); /* Mengangkat kolom sedikit saat hover */
+        }
+
+        /* Efek saat hover pada kursus */
+        .course:hover {
+            transform: scale(1.05); /* Membesar kursus sedikit saat hover */
+        }
+
+        /* Styling untuk bagian tentang dan kontak */
+        .about, .contact {
+            background: #ffffff;
+            color: #000;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Kursus Online</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#courses">Kursus</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="courses">
+        <div class="column popular">
+            <h2>Kursus Populer</h2>
+            <div class="course">
+                <img src="aset/html.png" alt="Kursus A">
+                <h3>Kursus A</h3>
+                <p>HTML (HyperText Markup Language) adalah bahasa markup standar yang digunakan untuk membuat dan mendesain halaman web. HTML menyediakan struktur dasar untuk konten di internet dengan menggunakan elemen dan tag. Dengan HTML, pengguna dapat mengatur teks, gambar, tautan, tabel, dan multimedia lainnya dalam dokumen web.</p>
+            </div>
+            <div class="course">
+                <img src="aset/jav.png" alt="Kursus B">
+                <h3>Kursus B</h3>
+                <p>Java adalah bahasa pemrograman yang berorientasi objek dan berplatform independen, dirancang untuk memberikan kemudahan dalam pengembangan aplikasi yang kuat dan aman. Dikembangkan oleh Sun Microsystems (sekarang bagian dari Oracle) pada tahun 1995, Java memiliki motto "Write Once, Run Anywhere" (WORA), yang berarti kode yang ditulis dalam Java dapat dijalankan di berbagai platform tanpa perlu modifikasi.</p>
+            </div>
+        </div>
+        
+        <div class="column new">
+            <h2>Kursus Baru</h2>
+            <div class="course">
+                <img src="aset/css.png" alt="Kursus C">
+                <h3>Kursus C</h3>
+                <p>CSS (Cascading Style Sheets) adalah bahasa stylesheet yang digunakan untuk mendesain dan mengatur tampilan halaman web yang ditulis dalam HTML. Dengan CSS, pengembang dapat mengontrol elemen visual seperti warna, font, tata letak, dan jarak antar elemen, sehingga menciptakan pengalaman pengguna yang menarik dan konsisten.</p>
+            </div>
+            <div class="course">
+                <img src="aset/py.png" alt="Kursus D">
+                <h3>Kursus D</h3>
+                <p>Python adalah bahasa pemrograman tingkat tinggi yang terkenal karena sintaksisnya yang sederhana dan mudah dibaca, membuatnya cocok untuk pemula dan pengembang berpengalaman. Dikenal sebagai bahasa yang serba guna, Python digunakan dalam berbagai aplikasi, mulai dari pengembangan web, analisis data, dan kecerdasan buatan hingga otomatisasi dan pengembangan perangkat lunak.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Tentang Kami</h2>
+        <p>Kursus Online adalah platform yang menyediakan berbagai kursus untuk meningkatkan keterampilan dan pengetahuan Anda di dunia digital. Kami menawarkan kursus dari berbagai bidang untuk semua tingkat pengalaman, dari pemula hingga profesional. Bergabunglah dengan kami untuk mengembangkan keterampilan Anda dan meraih impian karir Anda!</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Kontak</h2>
+        <p></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Kursus Online</p>
+    </footer>
+</body>
+</html>
